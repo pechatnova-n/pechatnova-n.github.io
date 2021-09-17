@@ -1,0 +1,409 @@
+@import "nullstyle.scss";
+
+
+$play: 'Playfair Display', serif;
+$pt: 'PT Sans', sans-serif;
+$nav: #0F0F0F;
+$hover: #1F1F1F;
+$text: #FFF;
+$white: #fff;
+$product_bg: #191B1C;
+
+
+.wrapper{
+  width: 1920px;
+  margin: 0 auto;
+  background: #000;
+  color: $text;
+  a{
+    text-decoration: none;
+    color: $text;
+  }
+  .inner{
+    width: 1110px;
+    margin: 0 auto;
+  }
+  h2 {
+    font: 24px/32px $play;
+    color: $white;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  header.header {
+    .header__top-line {
+      .inner {
+        display: grid;
+        grid-template-columns: 40% 1fr 30%;
+        grid-template-rows: 44px;
+        grid-template-areas: "contacts . login";
+        font: 12px/15px $pt;
+        .contacts {
+          grid-area: contacts;
+          justify-self: start;
+          align-self: center;
+          a.contacts__contacts-tel {
+            position: relative;
+            padding-left: 20px;
+            &:before{
+              position: absolute;
+              display: block;
+              top: 0;
+              left: 0;
+              width: 15px;
+              height: 15px;
+              content: "";
+              background: url("../img/phone.svg") no-repeat;
+            }
+          }
+          span {
+            position: relative;
+            padding-left: 10px;
+            margin-left: 10px;
+            &:before{
+              position: absolute;
+              display: block;
+              top: 0;
+              left: 0;
+              content: "|";
+              width: 1px;
+              height: 15px;
+            }
+          }
+        }
+        .login {
+          grid-area: login;
+          justify-self: end;
+          align-self: center;
+          a {
+            position: relative;
+            padding-left: 20px;
+            &:before{
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 15px;
+              height: 12px;
+              content: "";
+              background: url("../img/login.svg") no-repeat;
+            }
+          }
+        }
+      }
+    }
+    .header__header-main {
+      background: $nav;
+      .inner {
+        display: grid;
+        grid-template-columns: 104px 1fr auto 30px 30px;
+        grid-template-rows: 80px;
+        grid-gap: 20px;
+        grid-template-areas: "logo . menu basket search";
+        justify-self: stretch;
+        align-items: center;
+        .logo {
+          grid-area: logo;
+          a.logo__logo-img {
+            img {}
+          }
+        }
+        nav.menu {
+          grid-area: menu;
+          display: flex;
+          a {
+            padding: 31px 20px;
+            font: 14px/18px $pt;
+            &:hover{
+              background: $hover;
+            }
+          }
+        }
+        .basket {
+          grid-area: basket;
+          a.basket-icon {
+            display: block;
+            width: 22px;
+            height: 22px;
+            background: url("./../img/basket.svg") no-repeat;
+          }
+        }
+        .search {
+          grid-area: search;
+          a.search-icon {
+            display: block;
+            width: 22px;
+            height: 22px;
+            background: url("./../img/search.svg") no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content{
+    width: 1920px;
+    .main-content--title{
+      position: relative;
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+      font: 36px/48px $play;
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      &:after{
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 120px;
+        height: 1px;
+        content: "";
+        background: $white;
+      }
+      span{
+        font: 28px/48px $pt;
+      }
+    }
+    .main-content--goods{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .item{
+        display: block;
+        width: 260px;
+        margin-bottom: 40px;
+        a.link{
+          display: block;
+          position: relative;
+          height: 325px;
+          margin-bottom: 20px;
+          background: $product_bg;
+          img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 215px;
+            height: 215px;
+
+          }
+        }
+        span{
+          display: block;
+          margin-bottom: 10px;
+          font: 16px/21px $play;
+          &.name{
+            font: 18px/24px $play;
+          }
+        }
+      }
+    }
+    .first_screen{
+      position: relative;
+      width: 100%;
+      height: 810px;
+      img .first_screen--main_img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .first_screen--title{
+        position: absolute;
+        top: 160px;
+        left: 50%;
+        transform: translate(-50%);
+        border: 2px solid $white;
+        padding: 90px 65px;
+        font: 22px/28px $play;
+        text-align: center;
+        text-transform: uppercase;
+        span.first_screen--name{
+          display: block;
+          font: 64px/96px $play;
+          text-align: center;
+          border-bottom: 2px solid $white;
+        }
+      }
+      .first_screen--descr{
+        position: absolute;
+        top: 580px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 730px;
+        font: 16px/24px $pt;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+    .collections{
+      display: grid;
+      grid-template-areas: "season new-collection"
+                            "img collection";
+      grid-template-columns: repeat(24, 80px);
+      grid-template-rows: 730px 600px;
+      grid-gap: 0;
+
+      .collections--descr{
+        width: 470px;
+        margin: 0 auto 40px;
+        font: 14px/21px $pt;
+        text-align: center;
+      }
+      .collections--watch-all{
+        margin: 0 auto;
+        text-align: center;
+        a{
+          border: 1px solid $white;
+          font: 18px/24px $pt;
+          text-align: center;
+          padding: 5px 15px;
+          text-transform: uppercase;
+          &:hover{
+            background: rgba(255, 255, 255, 0.4);
+          }
+        }
+
+      }
+      .collections--season{
+        grid-area: season;
+        grid-column: 1/14;
+        padding: 90px 80px 0;
+        margin-bottom: 50px;
+
+      }
+      .collections--new-collection{
+        grid-area: new-collection;
+        grid-column: 14/25;
+        background: url("../img/new-collection.svg") 100% 100%;
+        padding-top: 480px;
+        text-align: center;
+      }
+      .collections--img{
+        grid-area: img;
+        grid-column: 1/12;
+      }
+      .collections--collection{
+        grid-area: collection;
+        grid-column: 12/25;
+        padding-top: 100px;
+        text-align: center;
+      }
+    }
+    .novelty{
+      width: 1110px;
+      margin: 0 auto;
+      padding: 120px 0 150px;
+      .main-content--title{
+        margin-bottom: 80px;
+      }
+    }
+    .our_brands{
+      background: $nav;
+      padding: 80px 0;
+      .inner{
+        width: 1110px;
+        margin: 0 auto;
+        .our_brands--block{
+          display: flex;
+          justify-content: space-between;
+
+          .item{
+            img{}
+          }
+        }
+      }
+    }
+
+    .info_block {
+      background: url("../img/info_bg.svg") 100% 100% no-repeat;
+      .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        height: 400px;
+        h2{
+          padding-top: 80px;
+        }
+        .descr {
+          font: 14px/21px $pt;
+          color: $white;
+        }
+        .about_shop {
+          width: 350px;
+        }
+        .categories {
+          width: 290px;
+          .links {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            a {
+              display: inline-block;
+              font: 14px/21px $pt;
+              color: $white;
+              padding: 10px 20px;
+              margin-bottom: 30px;
+              background: $nav;
+              &:hover{
+                background: $hover;
+              }
+            }
+          }
+        }
+        .mailing_list {
+          width: 350px;
+          .descr {
+            margin-bottom: 35px;
+          }
+          .form_block {
+            form {
+              max-width: 100%;
+              display: flex;
+              flex-wrap: nowrap;
+              input[type="text"] {
+                display: block;
+                font: 18px/22px $pt;
+                padding: 10px 15px;
+                color: $white;
+                background: rgba(255, 255, 255, 0.4);
+                box-sizing: border-box
+              }
+              input[type="button"]  {
+                display: block;
+                font: 14px/22px $pt;
+                padding: 10px 15px;
+                background: $nav;
+                color: $white;
+                text-transform: uppercase;
+                text-align: center;
+                box-sizing: border-box;
+                cursor: pointer;
+                &:hover{
+                  background: $hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .footer{
+    .inner{
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+
+}
+
+
+
