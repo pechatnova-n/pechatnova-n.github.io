@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'SF UI  Text';
+	src: url('../fonts/font/SFUIText-Medium.eot');
+	src: url('../fonts/font/SFUIText-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/font/SFUIText-Medium.woff') format('woff'),
+		url('../fonts/font/SFUIText-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text';
+	src: url('../fonts/font/SFUIText-Heavy.eot');
+	src: url('../fonts/font/SFUIText-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/font/SFUIText-Heavy.woff') format('woff'),
+		url('../fonts/font/SFUIText-Heavy.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text';
+	src: url('../fonts/font/SFUIText-Regular.eot');
+	src: url('../fonts/font/SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/font/SFUIText-Regular.woff') format('woff'),
+		url('../fonts/font/SFUIText-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI  Text';
+	src: url('../fonts/font/SFUIText-Bold.eot');
+	src: url('../fonts/font/SFUIText-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/font/SFUIText-Bold.woff') format('woff'),
+		url('../fonts/font/SFUIText-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/font/SFUIDisplay-Heavy.eot');
+	src: url('../fonts/font/SFUIDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/font/SFUIDisplay-Heavy.woff') format('woff'),
+		 url('../fonts/font/SFUIDisplay-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/font/SFUIDisplay-Regular.eot');
+	src: url('../fonts/font/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/font/SFUIDisplay-Regular.woff') format('woff'),
+	     url('../fonts/font/SFUIDisplay-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/font/SFUIDisplay-Bold.eot');
+	src: url('../fonts/font/SFUIDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/font/SFUIDisplay-Bold.woff') format('woff'),
+		 url('../fonts/font/SFUIDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('../fonts/font/SFUIDisplay-Medium.eot');
+	src: url('../fonts/font/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/font/SFUIDisplay-Medium.woff') format('woff'),
+		 url('../fonts/font/SFUIDisplay-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
